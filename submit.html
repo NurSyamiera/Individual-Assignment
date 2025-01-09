@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBMIT</title>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <style>
+        body {
+            background-image: url(images/background.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: brown; 
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 
+        {
+            font-size: 50px;
+            color: brown;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        img 
+        {
+            margin-top: 20px;
+            max-width: 500px; 
+            width: 350px; 
+            height: 450px; 
+            border-radius: 50%; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn 
+        {
+            from 
+            {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to 
+            {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce 
+        {
+            0%, 100% 
+            {
+                transform: translateY(0);
+            }
+            50% 
+            {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 768px) 
+        {
+            h1 
+            {
+                font-size: 2rem;
+            }
+
+            img 
+            {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="images/syamiera.jpg" alt="Thank you" />
+    <h1>Your form has been submitted! Thanks</h1>
+</body>
+</html>
+<div class="btn-box">
+                <a href="index.html">Back to HomePage</a>
